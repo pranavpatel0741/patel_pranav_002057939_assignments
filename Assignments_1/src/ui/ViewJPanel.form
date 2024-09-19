@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblLName" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPhone" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDLNum" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDLState" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSSN" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFName" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblADL1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFaxNum" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblADL2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblState" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCountry" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCity" alignment="0" min="-2" pref="56" max="-2" attributes="0"/>
+                          <Component id="lblZip" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTeleNum" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblGender" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDOB" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblOccu" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtZip" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtCountry" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTeleNum" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtFaxNum" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtState" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtCity" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEmail" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtPhone" alignment="0" pref="195" max="32767" attributes="0"/>
+                                  <Component id="txtDLNum" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtDLState" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtSSN" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtLName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtFName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="ADL2jScrollPane" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="txtDOB" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtOccu" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="ADL1jScrollPane" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="txtGender" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="41" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="lblTitle" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lblTitle" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblFName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtFName" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblLName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtLName" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblPhone" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPhone" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblDLNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDLNum" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="txtDLState" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDLState" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="txtSSN" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblSSN" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblGender" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtGender" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblDOB" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDOB" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblOccu" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtOccu" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="ADL1jScrollPane" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="lblADL1" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="ADL2jScrollPane" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="lblADL2" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblCity" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCity" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtState" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblState" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblCountry" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCountry" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblZip" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtZip" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblTeleNum" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTeleNum" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblFaxNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtFaxNum" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="37" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JTextField" name="txtOccu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Occupation"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTeleNum">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Telephone Number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblFaxNum">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Fax Number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCity">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="city"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="ADL1jScrollPane">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="txtADL1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="ADL2jScrollPane">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="txtADL2">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="lblTitle">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Helvetica Neue" size="14" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Person Profile"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCountry">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Country/Region"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblFName">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="First Name"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtState">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="state"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblLName">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Last Name"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCountry">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Country"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEmail">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Email"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPhone">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Phone"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDLNum">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Drivers License Number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDLState">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Drivers License State"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblSSN">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Social Security Number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtFName">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="FName"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFNameActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtLName">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="LName"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLNameActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtZip">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Zip"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTeleNum">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tele Num"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEmail">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Email Add"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEmailActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtFaxNum">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fax Num"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPhone">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Phone Num"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPhoneActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblGender">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Gender"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDLNum">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DL Num"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDOB">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Date of Birth"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDLState">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Dl state"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDLStateActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblOccu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Occupation"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtSSN">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SSN"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblADL1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Address Line 1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblADL2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Address Line 2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCity">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="City"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDOB">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MM/DD/YYYY"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblState">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="State"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblZip">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="text" type="java.lang.String" value="Zip"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtGender">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGenderActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
