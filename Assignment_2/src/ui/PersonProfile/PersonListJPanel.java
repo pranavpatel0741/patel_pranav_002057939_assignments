@@ -24,9 +24,9 @@ public class PersonListJPanel extends javax.swing.JPanel {
      */
     public PersonListJPanel(JPanel container , PersonDirectory directory) {
         initComponents();
-        initComponents();
         userProcessContainer = container;
         personDirectory=directory;
+        populateTable();
     }
 
     /**
@@ -49,14 +49,15 @@ public class PersonListJPanel extends javax.swing.JPanel {
 
         tblPersonList.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
             },
             new String [] {
                 "FName", "LName", "SSN", "Age", "Home Address", "Home Phone", "Work Address", "Work Phone"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, true, true, true, true
+                false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -86,6 +87,7 @@ public class PersonListJPanel extends javax.swing.JPanel {
             }
         });
 
+        txtSearchBox.setText("Search by Name and SSN");
         txtSearchBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSearchBoxActionPerformed(evt);
@@ -125,7 +127,7 @@ public class PersonListJPanel extends javax.swing.JPanel {
                             .addComponent(btnViewDetails, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnSearch, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addComponent(txtSearchBox, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtSearchBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -217,16 +219,16 @@ public void populateTable() {
 
         for (Person p : personDirectory.getPersons()) {
             Object[] row = new Object[8];
-            row[0] = p.getFName();       // First Name
-            row[1] = p.getLName();       // Last Name
-            row[2] = p.getSSN();         // SSN
-            row[3] = p.getAge();         // Age
+            row[0] = p.getFName();       
+            row[1] = p.getLName();      
+            row[2] = p.getSSN();        
+            row[3] = p.getAge();        
             row[4] = p.getHSAdd() + ", " + p.getHUnitNum() + ", " + p.getHCity() + ", " + p.getHState() + " " + p.getHZip(); // Home Address
-            row[5] = p.getHPhNum();      // Home Phone Number
+            row[5] = p.getHPhNum();      
             row[6] = p.getWSAdd() + ", " + p.getWUnitNum() + ", " + p.getWCity() + ", " + p.getWState() + " " + p.getWZip(); // Work Address
-            row[7] = p.getWPhNum();      // Work Phone Number
+            row[7] = p.getWPhNum();      
 
-            model.addRow(row); // Add the row to the table model
+            model.addRow(row); 
         }
     }
 

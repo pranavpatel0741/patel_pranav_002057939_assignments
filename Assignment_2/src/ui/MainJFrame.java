@@ -165,6 +165,60 @@ private PersonDirectory personDirectory;
     anotherNewPerson.setWCity("Boston");
     anotherNewPerson.setWZip("02115");
     anotherNewPerson.setWPhNum("857929225");
+    
+    Person thirdPerson = personDirectory.addPerson();
+thirdPerson.setFName("Riddhi");
+thirdPerson.setLName("Patel");
+thirdPerson.setSSN("123456701");
+thirdPerson.setAge("30");
+thirdPerson.setHSAdd("12 Greenway Lane");
+thirdPerson.setHUnitNum("5");
+thirdPerson.setHState("MA");
+thirdPerson.setHCity("Cambridge");
+thirdPerson.setHZip("02138");
+thirdPerson.setHPhNum("857929227");
+thirdPerson.setWSAdd("12 Greenway Lane");
+thirdPerson.setWUnitNum("5");
+thirdPerson.setWState("MA");
+thirdPerson.setWCity("Cambridge");
+thirdPerson.setWZip("02138");
+thirdPerson.setWPhNum("857929227");
+
+Person fourthPerson = personDirectory.addPerson();
+fourthPerson.setFName("Krunal");
+fourthPerson.setLName("Vagashiya");
+fourthPerson.setSSN("123456702");
+fourthPerson.setAge("25");
+fourthPerson.setHSAdd("123 Commonwealth Ave");
+fourthPerson.setHUnitNum("8");
+fourthPerson.setHState("MA");
+fourthPerson.setHCity("Boston");
+fourthPerson.setHZip("02116");
+fourthPerson.setHPhNum("857929228");
+fourthPerson.setWSAdd("123 Commonwealth Ave");
+fourthPerson.setWUnitNum("8");
+fourthPerson.setWState("MA");
+fourthPerson.setWCity("Boston");
+fourthPerson.setWZip("02116");
+fourthPerson.setWPhNum("857929228");
+
+Person fifthPerson = personDirectory.addPerson();
+fifthPerson.setFName("Virat");
+fifthPerson.setLName("Kohli");
+fifthPerson.setSSN("123456703");
+fifthPerson.setAge("28");
+fifthPerson.setHSAdd("45 Charles Street");
+fifthPerson.setHUnitNum("3");
+fifthPerson.setHState("MA");
+fifthPerson.setHCity("Boston");
+fifthPerson.setHZip("02114");
+fifthPerson.setHPhNum("857929229");
+fifthPerson.setWSAdd("45 Charles Street");
+fifthPerson.setWUnitNum("3");
+fifthPerson.setWState("MA");
+fifthPerson.setWCity("Boston");
+fifthPerson.setWZip("02114");
+fifthPerson.setWPhNum("857929229");
 }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

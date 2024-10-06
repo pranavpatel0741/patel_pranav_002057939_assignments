@@ -4,7 +4,10 @@
  */
 package ui.PersonProfile;
 
+import java.awt.CardLayout;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import model.Person;
 import model.PersonDirectory;
 
 /**
@@ -75,6 +78,7 @@ public class AddPersonJPanel extends javax.swing.JPanel {
         lblWSAdd = new javax.swing.JLabel();
         lblWUnitNum = new javax.swing.JLabel();
         btnAddPerson = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
 
         lblTitle.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -132,12 +136,28 @@ public class AddPersonJPanel extends javax.swing.JPanel {
 
         btnAddPerson.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         btnAddPerson.setText("Add");
+        btnAddPerson.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddPersonActionPerformed(evt);
+            }
+        });
+
+        btnBack.setText("<<< Back");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTitle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnBack)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(144, 144, 144)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -154,12 +174,9 @@ public class AddPersonJPanel extends javax.swing.JPanel {
                                 .addGap(59, 59, 59)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtWUnitNum, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(lblWState)
-                                            .addComponent(lblWUnitNum)
-                                            .addComponent(lblWPhNum))
-                                        .addGap(58, 58, 58))
+                                    .addComponent(lblWState)
+                                    .addComponent(lblWUnitNum)
+                                    .addComponent(lblWPhNum)
                                     .addComponent(txtWState, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtWPhNum, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(txtWSAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -213,7 +230,9 @@ public class AddPersonJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblTitle)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTitle)
+                    .addComponent(btnBack))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
@@ -290,7 +309,7 @@ public class AddPersonJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtWPhNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtWZip, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(btnAddPerson)
                 .addGap(28, 28, 28))
         );
@@ -304,9 +323,85 @@ public class AddPersonJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtWSAddActionPerformed
 
+    private void btnAddPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddPersonActionPerformed
+
+  String fName = txtFName.getText();
+        String lName = txtLName.getText();
+        String sSN = txtSSN.getText();
+        String age = txtAge.getText();
+        String hSAdd = txtHSAdd.getText();
+        String hUnitNum = txtHUnitNum.getText();
+        String hCity = txtHCity.getText();
+        String hState = txtHState.getText();
+        String hZip = txtHZip.getText();
+        String hPhNum = txtHPhNum.getText();
+        String wSAdd = txtWSAdd.getText();
+        String wUnitNum = txtWUnitNum.getText();
+        String wCity = txtWCity.getText();
+        String wState = txtWState.getText();
+        String wZip = txtWZip.getText();
+        String wPhNum = txtWPhNum.getText();
+    
+    if (fName.isBlank() || lName.isBlank() || sSN.isBlank() || age.isBlank() || hSAdd.isBlank() || hPhNum.isBlank()) {
+        JOptionPane.showMessageDialog(this, "First Name, Last Name, SSN, Age, Home Address, and Home Phone are mandatory.", "Error", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    // Validate age as an integer
+   
+
+    // Add new Person to personDirectory
+    Person newPerson = personDirectory.addPerson();
+    newPerson.setFName(fName);
+    newPerson.setLName(lName);
+    newPerson.setSSN(sSN);
+    newPerson.setAge(age);
+    newPerson.setHSAdd(hSAdd);
+    newPerson.setHUnitNum(hUnitNum);
+    newPerson.setHCity(hCity);
+    newPerson.setHState(hState);
+    newPerson.setHZip(hZip);
+    newPerson.setHPhNum(hPhNum);
+    newPerson.setWSAdd(wSAdd);
+    newPerson.setWUnitNum(wUnitNum);
+    newPerson.setWCity(wCity);
+    newPerson.setWState(wState);
+    newPerson.setWZip(wZip);
+    newPerson.setWPhNum(wPhNum);
+
+    // Success message
+    JOptionPane.showMessageDialog(this, "Person successfully added.", "Information", JOptionPane.INFORMATION_MESSAGE);
+
+    // Clear input fields
+    txtFName.setText("");
+    txtLName.setText("");
+    txtSSN.setText("");
+    txtAge.setText("");
+    txtHSAdd.setText("");
+    txtHUnitNum.setText("");
+    txtHCity.setText("");
+    txtHState.setText("");
+    txtHZip.setText("");
+    txtHPhNum.setText("");
+    txtWSAdd.setText("");
+    txtWUnitNum.setText("");
+    txtWCity.setText("");
+    txtWState.setText("");
+    txtWZip.setText("");
+    txtWPhNum.setText("");       
+    }//GEN-LAST:event_btnAddPersonActionPerformed
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // TODO add your handling code here:
+        userProcessContainer.remove(this);
+        CardLayout layout=(CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_btnBackActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddPerson;
+    private javax.swing.JButton btnBack;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
