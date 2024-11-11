@@ -41,5 +41,9 @@ public class StudentDirectory {
         }
             return null; //not found after going through the whole list
          }
+
+    public ArrayList<StudentProfile> getStudentList() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

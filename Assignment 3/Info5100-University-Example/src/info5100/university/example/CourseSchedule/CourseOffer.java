@@ -99,4 +99,8 @@ public class CourseOffer {
         return course.getCredits();
     }
 
+    public double getCredits() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }

@@ -1,0 +1,5 @@
+Department
+Info5001UniversityExample
+UniversityManagementSystem
+Course
+Student
